@@ -1,0 +1,82 @@
+.holi-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .holi-text {
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .holi-colors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  
+  .holi-color {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: holi-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .holi-red {
+    background-color: #ff3b3f;
+    top: 30%;
+    left: 20%;
+  }
+  
+  .holi-green {
+    background-color: #00e37b;
+    top: 70%;
+    left: 40%;
+  }
+  
+  .holi-yellow {
+    background-color: #ffcd02;
+    top: 40%;
+    left: 60%;
+  }
+  
+  .holi-blue {
+    background-color: #00b0ff;
+    top: 60%;
+    left: 80%;
+  }
+  
+  @keyframes holi-animation {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(20%, -20%);
+    }
+    50% {
+      transform: translate(0, 0);
+    }
+    75% {
+      transform: translate(-20%, 20%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
